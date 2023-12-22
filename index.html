@@ -120,7 +120,7 @@
 							<p>Ready to transform your vision into reality? Connect with us today and take the first step towards launching your startup. Our team is eager to discuss your ideas and explore how we can collaborate to create something extraordinary.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" netlify>
+									<form id="contactForm" method="post" action="/" netlify>
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -183,6 +183,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				document.getElementById('contactForm').addEventListener('submit', function(event) {
+					event.preventDefault();
+			
+					const form = event.target;
+					const formData = new FormData(form);
+			
+					fetch(form.action, {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+						body: new URLSearchParams(formData).toString()
+					})
+					.then(() => alert('Thank you for your submission!'))
+					.catch((error) => alert('Oops! There was a problem submitting your form'));
+			
+				});
+			</script>
 	</body>
 </html>
