@@ -2523,7 +2523,7 @@ input, select, textarea {
 			width: 2.5em;
 			height: 2.5em;
 			display: block;
-			background: #D0D0D0;
+			background: #F28F3A;
 			border-radius: 100%;
 			color: #FF973D;
 			text-align: center;
@@ -3173,7 +3173,7 @@ input, select, textarea {
 		}
 		/*  home footer */
 		.wrapper.style1-alt {
-			background-color: #F4F4F4;
+			background-color: #FF973D;
 		}
 		/*  who we are section */
 		.wrapper.style2 {
@@ -3185,7 +3185,7 @@ input, select, textarea {
 		}
 		/*  what we do section */
 		.wrapper.style3 {
-			background-color: #D0D0D0;
+			background-color: #FF973D;
 		}
 		/*  */
 		.wrapper.style3-alt {
@@ -3591,7 +3591,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #121212;
+				background: #383838;
 			}
 
 			#sidebar nav a:after {
